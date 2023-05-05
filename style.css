@@ -1,0 +1,194 @@
+body {
+    background-color: #E9E9E9;
+}
+
+section {
+    width: 1200px;
+    height: 700px;
+    margin: 50px auto;
+    background-color: #E9E9E9;
+    border-radius: 33px;
+    box-shadow: 0px 2px 250px 2px rgba(47, 47, 47, 0.22);
+    display: flex;
+    align-items: center;
+}
+
+/* right div start>>>>>> */
+#menu {
+    background-color: #F0EEEE;
+    border-radius: 34px 0px 0px 33px;
+    border-right: 1px solid #E2E2E2;
+    width: 120px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu>h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    height: 150px;
+    background-image: url(img/download.png);
+    background-size: cover;
+    background-position: center;
+}
+/*menu>list of colorful circles  start............. */
+#menu>ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#menu>ul>li>ul {
+    padding-left: 0;
+    margin-left: 3px;
+    display: none;
+    visibility: hidden;
+    
+}
+
+#menu>ul>li:hover>ul{
+    
+    visibility: visible;
+    display: block;
+}
+
+#menu>ul>li>ul>li {
+    list-style: none;
+}
+
+#menu>ul>li>ul>li>div {
+    margin-bottom: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+}
+
+#menu>ul>li>ul>li:nth-of-type(1)>div {
+    background-color: #E4EE90;
+}
+
+#menu>ul>li>ul>li:nth-of-type(2)>div {
+    background-color: #01D3FF;
+}
+
+#menu>ul>li>ul>li:nth-of-type(3)>div {
+    background-color: #FF9B73;
+}
+
+#menu>ul>li>ul>li:nth-of-type(4)>div {
+    background-color: #FFC972;
+}
+/* list end................... */
+/* ................. */
+/* menu end............ */
+
+
+/* neteBox start...nooooooooooooo */
+#notesBox {
+    margin-left: 15px;
+    width: 100%;
+    height: 100%;
+}
+/* searchBox item........... */
+#notesBox>.searchBox {
+    display: flex;
+    align-items: center;
+    width: 210px;
+    height: 27px;
+    border-radius: 50px;
+    background-color: #fff;
+    margin: 18px 0 10px 0;
+}
+
+#notesBox>.searchBox>input {
+    outline: none;
+    border: none;
+    width: 110px;
+}
+/* searchBox item................ */
+#notesBox>h1 {
+    font-size: 50px;
+    margin: 0 0 15px 0;
+    font-family: monospace;
+}
+
+#notes {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows:250px 250px 250px 250px  ;
+    grid-gap: 15px;
+}
+
+#notes>div {
+    border-radius: 33px;
+    background-color: #01D3FF;
+    /* display: flex;
+    justify-content: space-around; */
+    position: relative;
+    /* align-items: center; */
+}
+
+#notes>div>div {
+    width: 90%;
+    height: 80%;
+    margin-top: 28px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+/* scroll.................. */
+#notes>div:first-of-type>div {
+    overflow-y: scroll;
+}
+#notes>div:first-of-type>div::-webkit-scrollbar {
+    width: 8px;
+    height: 15px;
+}
+#notes>div:first-of-type>div::-webkit-scrollbar-thumb{
+    background-color: #E4EE90;
+    border-radius: 10px;
+}
+#notes>div:first-of-type>div::-webkit-scrollbar-track{
+    background-color: #000;
+    border-radius: 10px;
+}
+/* scroll end............... */
+
+#notes>div>svg:first-of-type {
+    position: absolute;
+    top: 20px;
+    right: 21px;
+}
+
+.pencil {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    
+}
+nav{
+    margin:10px 0 0 20px;
+    border-radius: 30px;
+   
+    width: 200px;
+    background-color: rgb(194, 165, 165);
+}
+nav>ul{
+list-style: none;
+display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+nav>ul>li{
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+/* noteBox end....yeeeeeeeeeeeeeeeeeee */
