@@ -33,11 +33,14 @@ header > div {
 
 header > div > img {
     margin: 10px;
+    width: 5%;
 }
 
 .searchbox {
     background-color: rgb(195, 188, 188);
     width: 95%;
+    display: flex;
+    /* justify-content: center; */
 }
 
 .searchbox > input {
@@ -46,11 +49,17 @@ header > div > img {
     padding: 15px 300px 15px 10px;
 }
 
+.searchbox > img {
+    width: 5%;
+    float:right ;
+}
+
 #left > .savedNote > div{
-    background-image: url(Images/paper.jpg);
+    /* background-image: url(Images/paper.jpg); */
     background-size: cover;
     margin-bottom: 20px;
     background-color: #000;
+    border: solid 2px #000;
 }
 
 #left > .savedNote > div > input{
