@@ -131,9 +131,36 @@ section {
     /* display: flex;
     justify-content: space-around; */
     position: relative;
+    animation: start 0.4s linear forwards;
+    opacity: 0;
     /* align-items: center; */
 }
-
+#notes>div:nth-of-type(1){
+    animation-delay: .2s;
+}
+#notes>div:nth-of-type(2){
+    animation-delay: .4s;
+}
+#notes>div:nth-of-type(3){
+    animation-delay: .6s;
+}
+#notes>div:nth-of-type(4){
+    animation-delay: .8s;
+}
+@keyframes start {
+    from{
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+        transform: translate(200px,100px);
+    }
+    to{
+        width: 250px;
+        height: 250px;
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
 #notes>div>div {
     width: 90%;
     height: 80%;
