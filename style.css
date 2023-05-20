@@ -29,19 +29,23 @@ section {
 }
 
 #menu>h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:Arial, Helvetica ,sans-serif;
     font-size: 20px;
     font-weight: 600;
-    height: 150px;
-    background-image: url(img/download.png);
+    /* height: 150px; */
+    /* background-image: url(img/download.png);
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 /*menu>list of colorful circles  start............. */
 #menu>ul {
     list-style: none;
     padding-left: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+    width: 70px;
 }
 
 #menu>ul>li>ul {
@@ -49,7 +53,6 @@ section {
     margin-left: 3px;
     display: none;
     visibility: hidden;
-    
 }
 
 #menu>ul>li:hover>ul{
@@ -95,8 +98,17 @@ section {
     width: 100%;
     height: 100%;
 }
+#noteHeader{
+    display: flex;
+    justify-content: space-between;
+}
+#noteHeader>svg{
+    margin-top: 10px;
+    width: 55px;
+    margin-right: 40px;
+}
 /* searchBox item........... */
-#notesBox>.searchBox {
+#notesBox>#noteHeader>.searchBox {
     display: flex;
     align-items: center;
     width: 210px;
@@ -106,7 +118,7 @@ section {
     margin: 18px 0 10px 0;
 }
 
-#notesBox>.searchBox>input {
+#notesBox>#noteHeader>.searchBox>input {
     outline: none;
     border: none;
     width: 110px;
@@ -115,7 +127,7 @@ section {
 #notesBox>h1 {
     font-size: 50px;
     margin: 0 0 15px 0;
-    font-family: monospace;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #notes {
@@ -128,6 +140,7 @@ section {
 #notes>div {
     border-radius: 33px;
     background-color: #01D3FF;
+    font-family: Arial, Helvetica, sans-serif;
     /* display: flex;
     justify-content: space-around; */
     position: relative;
@@ -168,6 +181,21 @@ section {
     margin-left: 20px;
     overflow: hidden;
 }
+
+#notes>div>h3{
+    padding-left: 10px;
+}
+#notes>div>#textarea{
+    margin-left: 10px;
+    /* padding-right: 20px; */
+    line-height: 19px;
+    font-size: 15px;
+    /* padding-bottom: 140px; */
+    outline: none;
+    border: none;
+    background-color: #01D3FF;
+}
+
 /* scroll.................. */
 #notes>div:first-of-type>div {
     overflow-y: scroll;
