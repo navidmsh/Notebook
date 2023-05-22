@@ -4,6 +4,7 @@
 body {
     background-color: #E9E9E9;
 }
+
 section {
     width: 1200px;
     height: 700px;
@@ -29,14 +30,40 @@ section {
 }
 
 #menu>h1 {
-    font-family:Arial, Helvetica ,sans-serif;
-    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
     font-weight: 600;
-    /* height: 150px; */
-    /* background-image: url(img/download.png);
-    background-size: cover;
-    background-position: center; */
+    /* animation: color 20s; */
+    margin: 15px 0;
 }
+
+@keyframes color {
+    0% {
+        color: purple;
+    }
+
+    20% {
+        color: blue;
+    }
+
+    40% {
+        color: green;
+    }
+
+    60% {
+        color: yellow;
+    }
+
+    80% {
+        color: orange;
+    }
+
+    100% {
+
+        color: red;
+    }
+}
+
 /*menu>list of colorful circles  start............. */
 #menu>ul {
     list-style: none;
@@ -44,7 +71,7 @@ section {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content:center ;
+    justify-content: center;
     width: 70px;
 }
 
@@ -55,8 +82,8 @@ section {
     visibility: hidden;
 }
 
-#menu>ul>li:hover>ul{
-    
+#menu>ul>li:hover>ul {
+
     visibility: visible;
     display: block;
 }
@@ -72,21 +99,22 @@ section {
     border-radius: 30px;
 }
 
-#menu>ul>li>ul>li:nth-of-type(1)>div {
+#menu>ul>li>ul>li>#yellow {
     background-color: #E4EE90;
 }
 
-#menu>ul>li>ul>li:nth-of-type(2)>div {
+#menu>ul>li>ul>li>#blue {
     background-color: #01D3FF;
 }
 
-#menu>ul>li>ul>li:nth-of-type(3)>div {
+#menu>ul>li>ul>li>#red {
     background-color: #FF9B73;
 }
 
-#menu>ul>li>ul>li:nth-of-type(4)>div {
+#menu>ul>li>ul>li>#orange {
     background-color: #FFC972;
 }
+
 /* list end................... */
 /* ................. */
 /* menu end............ */
@@ -98,15 +126,18 @@ section {
     width: 100%;
     height: 100%;
 }
-#noteHeader{
+
+#noteHeader {
     display: flex;
     justify-content: space-between;
 }
-#noteHeader>svg{
+
+#noteHeader>svg {
     margin-top: 10px;
     width: 55px;
     margin-right: 40px;
 }
+
 /* searchBox item........... */
 #notesBox>#noteHeader>.searchBox {
     display: flex;
@@ -123,9 +154,10 @@ section {
     border: none;
     width: 110px;
 }
+
 /* searchBox item................ */
 #notesBox>h1 {
-    font-size: 50px;
+    font-size: 40px;
     margin: 0 0 15px 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -133,47 +165,54 @@ section {
 #notes {
     display: grid;
     grid-template-columns: 250px 250px 250px 250px;
-    grid-template-rows:250px 250px 250px 250px  ;
+    grid-template-rows: 250px 250px 250px 250px;
     grid-gap: 15px;
 }
 
 #notes>div {
-    border-radius: 33px;
+    border-radius: 18px;
     background-color: #01D3FF;
     font-family: Arial, Helvetica, sans-serif;
     /* display: flex;
     justify-content: space-around; */
     position: relative;
-    animation: start 0.4s linear forwards;
+    animation: start .3s linear forwards;
     opacity: 0;
     /* align-items: center; */
 }
-#notes>div:nth-of-type(1){
+
+#notes>div:nth-of-type(1) {
     animation-delay: .2s;
 }
-#notes>div:nth-of-type(2){
+
+#notes>div:nth-of-type(2) {
     animation-delay: .4s;
 }
-#notes>div:nth-of-type(3){
+
+#notes>div:nth-of-type(3) {
     animation-delay: .6s;
 }
-#notes>div:nth-of-type(4){
+
+#notes>div:nth-of-type(4) {
     animation-delay: .8s;
 }
+
 @keyframes start {
-    from{
+    from {
         width: 0px;
         height: 0px;
         opacity: 0;
-        transform: translate(200px,100px);
+        /* transform: translate(200px, 100px); */
     }
-    to{
+
+    to {
         width: 250px;
         height: 250px;
         opacity: 1;
-        transform: translate(0,0);
+        /* transform: translate(0, 0); */
     }
 }
+
 #notes>div>div {
     width: 90%;
     height: 80%;
@@ -182,10 +221,11 @@ section {
     overflow: hidden;
 }
 
-#notes>div>h3{
+#notes>div>h3 {
     padding-left: 10px;
 }
-#notes>div>#textarea{
+
+#notes>div>#textarea {
     margin-left: 10px;
     /* padding-right: 20px; */
     line-height: 19px;
@@ -197,21 +237,8 @@ section {
 }
 
 /* scroll.................. */
-#notes>div:first-of-type>div {
-    overflow-y: scroll;
-}
-#notes>div:first-of-type>div::-webkit-scrollbar {
-    width: 8px;
-    height: 15px;
-}
-#notes>div:first-of-type>div::-webkit-scrollbar-thumb{
-    background-color: #E4EE90;
-    border-radius: 10px;
-}
-#notes>div:first-of-type>div::-webkit-scrollbar-track{
-    background-color: #000;
-    border-radius: 10px;
-}
+
+
 /* scroll end............... */
 
 #notes>div>svg:first-of-type {
@@ -225,25 +252,28 @@ section {
     bottom: 10px;
     right: 10px;
     width: 40px;
-    
+
 }
-nav{
-    margin:10px 0 0 20px;
+
+.nav {
+    margin: 10px 0 0 20px;
     border-radius: 30px;
-   
     width: 200px;
     background-color: rgb(194, 165, 165);
+    
 }
-nav>ul{
-list-style: none;
-display: flex;
+
+nav>ul {
+    list-style: none;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 0;
     margin: 0;
 }
-nav>ul>li{
+
+nav>ul>li {
     margin: 0 15px;
     font-size: 20px;
 }
