@@ -1,5 +1,8 @@
 /* IN THE NAME OF RAINBOW GOD :D */
 
+textarea{
+    height: 100px;
+}
 
 body {
     background-color: #E9E9E9;
@@ -279,3 +282,7 @@ nav>ul>li {
 }
 
 /* noteBox end....yeeeeeeeeeeeeeeeeeee */
+
+textarea{
+    margin: 40px 80px;
+}
