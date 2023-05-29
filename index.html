@@ -36,7 +36,8 @@
 
                     <ul>
                         <li>
-                            <div id="yellow" onClick="yellow()"></div>
+                            <div id="yellow" onClick="yellow()
+                            "></div>
                         </li>
                         <li>
                             <div id="blue" onClick="blue()"></div>
@@ -62,7 +63,8 @@
                     </svg>
                 </li>
                 <li>
-                    <svg  width="22" height="27" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="22" id="Delete" onClick="Delete()" height="27" viewBox="0 0 22 27" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M2 24C2 25.65 3.35 27 5 27H17C18.65 27 20 25.65 20 24V6H2V24ZM21.5 1.5H16.25L14.75 0H7.25L5.75 1.5H0.5V4.5H21.5V1.5Z"
                             fill="#414141" />
@@ -114,24 +116,22 @@
                     </g>
                 </svg>
             </div>
-            
+
             <!--js-->
-            <div id="boxs">
-            <div id="box"></div>
-            <div id="text"></div>
-            <div id="type"></div>
-            <div id="textbox"></div>
-            </div>
+
+
+
+
             <!--js end-->
 
             <h1>HEART ACE</h1>
             <div id="notes">
                 <div>
-                    
-                        <h3>title name</h3>
-                        <textarea name="" id="textarea" cols="21" rows="7" placeholder="type here..."></textarea>
 
-                    
+                   <input type="text" placeholder="title name">
+                    <textarea name="" placeholder="type here..."></textarea>
+
+
                     <nav class="nav">
                         <ul>
                             <li>
@@ -146,120 +146,50 @@
                         </ul>
                     </nav>
 
-                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M19 6.90152L12.1695 6.31415L9.5 0.042572L6.8305 6.32363L0 6.90152L5.187 11.3826L3.629 18.0426L9.5 14.5089L15.371 18.0426L13.8225 11.3826L19 6.90152ZM9.5 12.7373L5.928 14.8878L6.878 10.8331L3.724 8.10468L7.885 7.74468L9.5 3.92678L11.1245 7.75415L15.2855 8.11415L12.1315 10.8426L13.0815 14.8973L9.5 12.7373Z"
-                            fill="#C9D940" />
-                    </svg>
-
-                    <!-- <svg fill="#414141" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(4.92,4.92), scale(0.59)">
-                                <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" fill="#ECECEC"
-                                    strokewidth="0"></rect>
-                            </g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
-                                stroke="#CCCCCC" stroke-width="0.048"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2ZM10,16,7,17l1-3,7-7,2,2Z"></path>
-                            </g>
-                        </svg> -->
-
-                </div>
-                <div>
-
-                    <h3>title name</h3>
-                    <textarea name="" id="textarea" cols="21" rows="7" placeholder="type here..."></textarea>
-
-
-                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M19 6.90152L12.1695 6.31415L9.5 0.042572L6.8305 6.32363L0 6.90152L5.187 11.3826L3.629 18.0426L9.5 14.5089L15.371 18.0426L13.8225 11.3826L19 6.90152ZM9.5 12.7373L5.928 14.8878L6.878 10.8331L3.724 8.10468L7.885 7.74468L9.5 3.92678L11.1245 7.75415L15.2855 8.11415L12.1315 10.8426L13.0815 14.8973L9.5 12.7373Z"
-                            fill="#C9D940" />
-                    </svg>
-                    </svg>
-                    <svg class="pencil" fill="#414141" viewBox="-2.4 -2.4 28.80 28.80"
+                    <svg width="19" class="star" height="19" viewBox="0 0 19 19" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(4.92,4.92), scale(0.59)">
-                            <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" fill="#ECECEC"
-                                strokewidth="0"></rect>
-                        </g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
-                            stroke-width="0.048"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2ZM10,16,7,17l1-3,7-7,2,2Z"></path>
-                        </g>
-                    </svg>
-
-                </div>
-
-                <div>
-
-                    <h3>title name</h3>
-                    <textarea name="" id="textarea" cols="21" rows="7" placeholder="type here..."></textarea>
-
-
-                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M19 6.90152L12.1695 6.31415L9.5 0.042572L6.8305 6.32363L0 6.90152L5.187 11.3826L3.629 18.0426L9.5 14.5089L15.371 18.0426L13.8225 11.3826L19 6.90152ZM9.5 12.7373L5.928 14.8878L6.878 10.8331L3.724 8.10468L7.885 7.74468L9.5 3.92678L11.1245 7.75415L15.2855 8.11415L12.1315 10.8426L13.0815 14.8973L9.5 12.7373Z"
                             fill="#C9D940" />
                     </svg>
-                    </svg>
-                    <svg class="pencil" fill="#414141" viewBox="-2.4 -2.4 28.80 28.80"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(4.92,4.92), scale(0.59)">
-                            <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" fill="#ECECEC"
-                                strokewidth="0"></rect>
-                        </g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
-                            stroke-width="0.048"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2ZM10,16,7,17l1-3,7-7,2,2Z"></path>
-                        </g>
-                    </svg>
 
-                </div>
-                <div>
-
-                    <h3>title name</h3>
-                    <textarea name="" id="textarea" cols="21" rows="7" placeholder="type here..."></textarea>
-
-
-                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M19 6.90152L12.1695 6.31415L9.5 0.042572L6.8305 6.32363L0 6.90152L5.187 11.3826L3.629 18.0426L9.5 14.5089L15.371 18.0426L13.8225 11.3826L19 6.90152ZM9.5 12.7373L5.928 14.8878L6.878 10.8331L3.724 8.10468L7.885 7.74468L9.5 3.92678L11.1245 7.75415L15.2855 8.11415L12.1315 10.8426L13.0815 14.8973L9.5 12.7373Z"
-                            fill="#C9D940" />
-                    </svg>
-                    </svg>
-                    <svg class="pencil" fill="#414141" viewBox="-2.4 -2.4 28.80 28.80"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(4.92,4.92), scale(0.59)">
-                            <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" fill="#ECECEC"
-                                strokewidth="0"></rect>
-                        </g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
-                            stroke-width="0.048"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2ZM10,16,7,17l1-3,7-7,2,2Z"></path>
-                        </g>
-                    </svg>
-
-                </div>
-              
-                    <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(4.92,4.92), scale(0.59)">
-                        <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" fill="#ECECEC" strokewidth="0">
-                        </rect>
-                    </g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
-                        stroke-width="0.048"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2ZM10,16,7,17l1-3,7-7,2,2Z"></path>
-                    </g>
                 
+                           
+
+                </div>
+                <div>
+
+                    <input type="text" placeholder="title name">
+                    <textarea name="" placeholder="type here..."></textarea>
+
+
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 6.90152L12.1695 6.31415L9.5 0.042572L6.8305 6.32363L0 6.90152L5.187 11.3826L3.629 18.0426L9.5 14.5089L15.371 18.0426L13.8225 11.3826L19 6.90152ZM9.5 12.7373L5.928 14.8878L6.878 10.8331L3.724 8.10468L7.885 7.74468L9.5 3.92678L11.1245 7.75415L15.2855 8.11415L12.1315 10.8426L13.0815 14.8973L9.5 12.7373Z"
+                            fill="#C9D940" />
+                    </svg>
+                    </svg>
+                    <svg class="pencil" fill="#414141" viewBox="-2.4 -2.4 28.80 28.80"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(4.92,4.92), scale(0.59)">
+                            <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" fill="#ECECEC"
+                                strokewidth="0"></rect>
+                        </g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                            stroke-width="0.048"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2ZM10,16,7,17l1-3,7-7,2,2Z"></path>
+                        </g>
+                    </svg>
+
+                </div>
+
+
 
             </div>
 
         </div>
-        </div>
+
 
         <!-- notesBox end.......... -->
     </section>

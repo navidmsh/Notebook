@@ -1,8 +1,8 @@
 /* IN THE NAME OF RAINBOW GOD :D */
 
-textarea{
-    height: 100px;
-}
+
+
+
 
 body {
     background-color: #E9E9E9;
@@ -36,38 +36,12 @@ section {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     font-weight: 600;
-    /* animation: color 20s; */
     margin: 15px 0;
 }
 
-@keyframes color {
-    0% {
-        color: purple;
-    }
 
-    20% {
-        color: blue;
-    }
 
-    40% {
-        color: green;
-    }
-
-    60% {
-        color: yellow;
-    }
-
-    80% {
-        color: orange;
-    }
-
-    100% {
-
-        color: red;
-    }
-}
-
-/*menu>list of colorful circles  start............. */
+/*menu>list of colorfull circles  start............. */
 #menu>ul {
     list-style: none;
     padding-left: 0;
@@ -76,6 +50,9 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     width: 70px;
+}
+#menu>ul>li{
+    cursor: pointer;
 }
 
 #menu>ul>li>ul {
@@ -93,6 +70,7 @@ section {
 
 #menu>ul>li>ul>li {
     list-style: none;
+    cursor: pointer;
 }
 
 #menu>ul>li>ul>li>div {
@@ -124,12 +102,20 @@ section {
 
 
 /* neteBox start...nooooooooooooo */
+/* right div........... */
 #notesBox {
     margin-left: 15px;
     width: 100%;
     height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
+#notesBox>h1 {
+    font-size: 40px;
+    margin: 0 0 15px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
 #noteHeader {
     display: flex;
     justify-content: space-between;
@@ -159,25 +145,24 @@ section {
 }
 
 /* searchBox item................ */
-#notesBox>h1 {
-    font-size: 40px;
-    margin: 0 0 15px 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 #notes {
     display: grid;
     grid-template-columns: 250px 250px 250px 250px;
-    grid-template-rows: 250px 250px 250px 250px;
+    /* grid-template-rows: 250px 250px 250px 250px; */
     grid-gap: 15px;
+    margin-bottom: 40px;
 }
 
 #notes>div {
     border-radius: 18px;
     background-color: #01D3FF;
     font-family: Arial, Helvetica, sans-serif;
-    /* display: flex;
-    justify-content: space-around; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: flex-start; */
+    align-content: flex-start;
     position: relative;
     animation: start .3s linear forwards;
     opacity: 0;
@@ -190,14 +175,6 @@ section {
 
 #notes>div:nth-of-type(2) {
     animation-delay: .4s;
-}
-
-#notes>div:nth-of-type(3) {
-    animation-delay: .6s;
-}
-
-#notes>div:nth-of-type(4) {
-    animation-delay: .8s;
 }
 
 @keyframes start {
@@ -216,27 +193,48 @@ section {
     }
 }
 
-#notes>div>div {
-    width: 90%;
-    height: 80%;
-    margin-top: 28px;
-    margin-left: 20px;
-    overflow: hidden;
+#notesBox>h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    font-weight: bolder;
 }
 
-#notes>div>h3 {
-    padding-left: 10px;
+#notes>div>.delete {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+    background: rgba(152, 173, 155, 0.98);
+    border: none;
 }
 
-#notes>div>#textarea {
-    margin-left: 10px;
-    /* padding-right: 20px; */
+#notes>div>input {
+    margin: 10px;
+    padding: 10px 0 8px 0;
+    text-align: center;
     line-height: 19px;
-    font-size: 15px;
-    /* padding-bottom: 140px; */
+    font-size: 25px;
+    width: 150px;
     outline: none;
     border: none;
     background-color: #01D3FF;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#notes>div>textarea {
+    padding-bottom: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    resize: none;
+    border: none;
+    background-color: #01D3FF;
+    font-style: italic;
+    outline: none;
+    margin-left: 15px;
 }
 
 /* scroll.................. */
@@ -255,15 +253,19 @@ section {
     bottom: 10px;
     right: 10px;
     width: 40px;
+}
 
+#notes>div>i {
+    width: 70px;
+    color: #01D3FF;
 }
 
 .nav {
-    margin: 10px 0 0 20px;
+    margin: 15px auto;
     border-radius: 30px;
     width: 200px;
     background-color: rgb(194, 165, 165);
-    
+
 }
 
 nav>ul {
@@ -282,7 +284,3 @@ nav>ul>li {
 }
 
 /* noteBox end....yeeeeeeeeeeeeeeeeeee */
-
-textarea{
-    margin: 40px 80px;
-}
