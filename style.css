@@ -1,8 +1,18 @@
 /* IN THE NAME OF RAINBOW GOD :D */
 
 
-
-
+.yellowBox{
+    background: rgba(152, 173, 155, 0.98);
+}
+.blueBox{
+    background-color: #01D3FF;
+}
+.redBox{
+    background-color: #FF9B73;
+}
+.orangeBox{
+    background-color: #FFC972;
+}
 
 body {
     background-color: #E9E9E9;
@@ -149,7 +159,6 @@ section {
 #notes {
     display: grid;
     grid-template-columns: 250px 250px 250px 250px;
-    /* grid-template-rows: 250px 250px 250px 250px; */
     grid-gap: 15px;
     margin-bottom: 40px;
 }
@@ -161,12 +170,10 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* align-items: flex-start; */
     align-content: flex-start;
     position: relative;
     animation: start .3s linear forwards;
     opacity: 0;
-    /* align-items: center; */
 }
 
 #notes>div:nth-of-type(1) {
@@ -182,14 +189,12 @@ section {
         width: 0px;
         height: 0px;
         opacity: 0;
-        /* transform: translate(200px, 100px); */
     }
 
     to {
         width: 250px;
         height: 250px;
         opacity: 1;
-        /* transform: translate(0, 0); */
     }
 }
 

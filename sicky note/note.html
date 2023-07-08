@@ -13,11 +13,11 @@
 <body>
     <div class="main-container">
         <div class="container1">
-            <button class="btn btn-success" onclick="typeNote()">Create Note</button>
+            <button id="create-note">Create Note</button>
         </div>
-        <div class="container2"></div>
+        <div class="container2"><ul id="noteList"></ul></div>
         <div class="container3">
-            <form>
+            <form id="formNote">
                 <textarea id="note-text" placeholder="Write Note ..." maxlenght="96"></textarea>
                 <svg id="check-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-check-circle" viewBox="0 0 16 16">
